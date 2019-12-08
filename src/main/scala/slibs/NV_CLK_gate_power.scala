@@ -16,7 +16,7 @@ class SO_CLK_gate_power extends Module {
 
     })
 
-  val p_clkgate = Module(new CKLNQD12())
+  val p_clkgate = Module(new SO_CKLNQD12())
   p_clkgate.io.TE := false.B
   p_clkgate.io.CP := io.clk
   p_clkgate.io.E := io.clk_en
@@ -42,7 +42,7 @@ class NV_CLK_gate_power extends Module {
 
     })
 
-  val p_clkgate = Module(new CKLNQD12())
+  val p_clkgate = Module(new SO_CKLNQD12())
   p_clkgate.io.TE := false.B
   p_clkgate.io.CP := io.clk
   p_clkgate.io.E := io.clk_en

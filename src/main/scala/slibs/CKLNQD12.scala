@@ -4,7 +4,7 @@ import chisel3._
 import chisel3.experimental._
 import chisel3.util._
 
-class CKLNQD12 extends Module {
+class SO_CKLNQD12 extends Module {
   val io = IO(new Bundle {
     val CP = Input(Clock())
     val TE = Input(Bool())
